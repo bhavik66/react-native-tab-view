@@ -10,7 +10,6 @@
     "test": "jest",
     "flow": "flow",
     "lint": "eslint .",
-    "precommit": "yarn lint && yarn flow && yarn test",
     "release": "release-it"
   },
   "publishConfig": {
@@ -38,6 +37,7 @@
   },
   "homepage": "https://github.com/react-native-community/react-native-tab-view#readme",
   "dependencies": {
+    "@react-native-community/viewpager": "^4.2.1",
     "prop-types": "^15.6.1"
   },
   "devDependencies": {
