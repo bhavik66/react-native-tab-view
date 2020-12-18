@@ -55,7 +55,7 @@ export default class PagerAndroid<T: *> extends React.Component<Props<T>> {
   }
 
   _pageChangeCallabck: any;
-  _viewPager: ?ViewPagerAndroid;
+  _viewPager: ?ViewPager;
   _isIdle: boolean = true;
   _currentIndex = 0;
 
@@ -158,7 +158,7 @@ export default class PagerAndroid<T: *> extends React.Component<Props<T>> {
     const initialPage = this._getPageIndex(navigationState.index);
 
     return (
-      <ViewPagerAndroid
+      <ViewPager
         key={navigationState.routes.length}
         keyboardDismissMode={keyboardDismissMode}
         initialPage={initialPage}
@@ -170,7 +170,7 @@ export default class PagerAndroid<T: *> extends React.Component<Props<T>> {
         ref={el => (this._viewPager = el)}
       >
         {content}
-      </ViewPagerAndroid>
+      </ViewPager>
     );
   }
 }
