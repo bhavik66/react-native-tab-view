@@ -37,7 +37,6 @@
   },
   "homepage": "https://github.com/react-native-community/react-native-tab-view#readme",
   "dependencies": {
-    "@react-native-community/viewpager": "3.3.0",
     "prop-types": "^15.6.1"
   },
   "devDependencies": {
@@ -59,7 +58,8 @@
     "react-dom": "16.3.1",
     "react-native": "~0.55.4",
     "react-test-renderer": "16.3.1",
-    "release-it": "^7.6.1"
+    "release-it": "^7.6.1",
+    "@react-native-community/viewpager": "3.3.0"
   },
   "peerDependencies": {
     "react": "*",
